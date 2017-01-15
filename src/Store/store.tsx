@@ -1,9 +1,7 @@
 declare var window: Window & { devToolsExtension: any };
-import { createStore, combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
+import { createStore } from 'redux';
+import combinedReducer from '../Reducers'
 
-const rootReducer = combineReducers({
-  routing: routerReducer
-});
 
-export const store= createStore(rootReducer,window.devToolsExtension && window.devToolsExtension());
+
+export const store= createStore(combinedReducer,window.devToolsExtension && window.devToolsExtension());

@@ -22,6 +22,7 @@ export default class NavigationBar extends React.Component<any, any>{
                             <NavigationItem to="/">Home</NavigationItem>
                             <NavigationItem to="/about">About Us</NavigationItem>
                             <NavigationItem to="/contact">Contact Us</NavigationItem>
+                            <NavigationItem to="/counter">Counter</NavigationItem>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
