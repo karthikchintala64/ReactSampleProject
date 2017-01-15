@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import NavigationBar from './Navigation';
+import NavigationBar from './NavigationBar';
 
 export default class Layout extends React.Component<any, any>{
     render(){

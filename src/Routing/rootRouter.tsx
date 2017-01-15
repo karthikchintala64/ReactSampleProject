@@ -3,13 +3,13 @@ import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-import routes from './Store/routes';
-import {store} from './Store/store';
+import routes from './routes';
+import {store} from '../Store/store';
 
-import Layout from './Layout/layout';
-import Home from './Home/home';
-import About from './About/about';
-import Contact from './Contact/contact';
+import Layout from '../Layout/layout';
+import Home from '../Home/home';
+import About from '../About/about';
+import Contact from '../Contact/contact';
 
 
 

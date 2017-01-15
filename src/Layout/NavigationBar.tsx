@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Link } from 'react-router';
+import { Link  } from 'react-router';
+
+import NavigationItem from './NavigationItem';
 
 
 export default class NavigationBar extends React.Component<any, any>{
@@ -13,13 +15,13 @@ export default class NavigationBar extends React.Component<any, any>{
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="#">Karthik Chintala</a>
+                        <Link  to="/" className="navbar-brand">Karthik Chintala</Link>
                     </div>
                     <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav">
-                            <li className="active"><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About Us</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
+                            <NavigationItem to="/">Home</NavigationItem>
+                            <NavigationItem to="/about">About Us</NavigationItem>
+                            <NavigationItem to="/contact">Contact Us</NavigationItem>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
