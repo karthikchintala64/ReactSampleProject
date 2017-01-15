@@ -7,4 +7,5 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 
 import RootRouter from './rootRouter';
 
+
 ReactDOM.render(<RootRouter/>, document.getElementById('app'))
