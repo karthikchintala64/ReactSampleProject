@@ -1,32 +1,28 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import {List } from 'immutable';
 
 import {store} from '../Store/store';
 import * as counterActions from '../actions/counterActions'
 
-class Counter extends React.Component<any,any>{
-    onIncrement(){
-        store.dispatch(counterActions.Increment);
-    }
+export interface ICounterComponentProps extends React.Props<any>{
+    index:Number,
+    count:Number,
+    onIncrement(),
+    onDecrement()
+}
 
-    onDecrement(){
-        store.dispatch(counterActions.Decrement)
-    }
+export default class CounterComponent extends React.Component<ICounterComponentProps,any>{
 
     render(){
+        const { index, count } =this.props;
         return (
             <div>
-                Counter: {store.getState().counter}
+                Counter {index} : {count}
                 <br/>
-                <button onClick={this.onIncrement}>+</button>
-                <span className="">&nbsp;</span>
-                <button onClick={this.onDecrement}>-</button>
+                <button onClick={() => this.props.onDecrement()}>-</button>
+                <button onClick={() => this.props.onIncrement()}>+</button>
             </div>
         );
     }
 }
-
-export default connect(state => ({
-    counter: state.counter
-}))(Counter);
-
