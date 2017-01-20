@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import {List } from 'immutable';
 
-import {store} from '../Store/store';
+import {store} from '../store';
 import * as counterActions from '../actions/counterActions'
 
 import  CounterComponent  from '../Components/counter';
@@ -17,11 +17,11 @@ export interface ICounterContainerProps extends React.Props<any>{
 
 class CounterContainer extends React.Component<ICounterContainerProps,any>{
     onAddCounter(){
-        store.dispatch(counterActions.ADD_COUNTER)
+        store.dispatch(counterActions.AddCounter())
     }
 
     onRemoveCounter(){
-        store.dispatch(counterActions.REMOVE_COUNTER)
+        store.dispatch(counterActions.RemoveCounter())
     }
     
 

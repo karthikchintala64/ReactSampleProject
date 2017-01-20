@@ -1,0 +1,17 @@
+export const ADD_COUNTER = 'ADD_COUNTER';
+
+export const REMOVE_COUNTER = 'REMOVE_COUNTER';
+
+export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+
+export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+
+export const LOGIN = 'LOGIN';
+
+export const GET_ACCESS_TOKEN = 'GET_ACCESS_TOKEN';
+
+export const SET_ACCESS_TOKEN = 'SET_ACCESS_TOKEN';
+
+export const GET_USER_DETAILS = 'GET_USER_DETAILS';
+
+export const SET_USER_DETAILS = 'SET_USER_DETAILS';

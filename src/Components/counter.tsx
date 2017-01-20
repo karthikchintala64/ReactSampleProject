@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import {List } from 'immutable';
 
-import {store} from '../Store/store';
+import {store} from '../store';
 import * as counterActions from '../actions/counterActions'
 
 export interface ICounterComponentProps extends React.Props<any>{

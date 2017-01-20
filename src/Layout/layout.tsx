@@ -1,9 +1,12 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
 
 import NavigationBar from './NavigationBar';
 
-export default class Layout extends React.Component<any, any>{
+
+class Layout extends React.Component<any, any>{
     render(){
+        
         return(
             <div>
                 <NavigationBar/>
@@ -14,3 +17,9 @@ export default class Layout extends React.Component<any, any>{
         )
     }
 }
+
+const mapStateToProps= (state, ownProps) => {
+        return {};
+}
+
+export default connect(mapStateToProps)(Layout);

@@ -1,26 +1,31 @@
+import { ADD_COUNTER, REMOVE_COUNTER, INCREMENT_COUNTER, DECREMENT_COUNTER } from './actiontypes';
 
-export const Increment = function (index) {
+export const Increment = (index) => {
     return {
-        type: 'INCREMENT',
+        type: INCREMENT_COUNTER,
         payload: {
             index: index
         }
     }
 }
 
-export const Decrement = function (index) {
+export const Decrement = (index) => {
     return {
-        type: 'DECREMENT',
+        type: DECREMENT_COUNTER,
         payload: {
             index: index
         }
     }
 }
 
-export const ADD_COUNTER= {
-    type:'ADD_COUNTER'
+export const AddCounter = () => {
+    return {
+        type: ADD_COUNTER
+    }
 }
 
-export const REMOVE_COUNTER= {
-    type:'REMOVE_COUNTER'
+export const RemoveCounter = () => {
+    return {
+        type: REMOVE_COUNTER
+    }
 }
